@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Hauntings of Charleston, South Carolina</title>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ghost.css"> 
+ <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+
+</header>
+
+<div id="col1">
+<a href="ghost.html">Home</a>
+<a href="purchase.html">Purchase Tickets</a>
+<a href="history.html">History</a>
+<a href="stories.html">Haunted Spots</a>
+<a href="goc.html">Ghosts of the City</a>
+<a href="references.html">References</a>
+</div>
+
+<div id="col2">
+<h2>The First Female Serial Killer</h2>
+<p>The Six Mile Wayfarer House, several miles north of Charleston, had a steady crowd of mostly men who were traveling and in need of a place to stay for the night. Little did they know, they would not be leaving. Lavinia Fisher and her husband, John, ran this hotel and they would invite their guests to a homemade meal were Lavinia would go on to drug their food. After their customers began to feel drowsy, Lavinia would escort them to their room where they were essentially approaching their death. Lavinia and her husband brutally murdered tens of guests.</p>
+</div>
+<div id="col3">
+<p>Citizens became suspicious because many people were mysteriously disappearing. Due to lack of evidence, the sheriff's were unable to do anything for quite some time until a man named John consciously experienced the Fisher's plan and was able to escape before it was too late. Lavinia had tried to poison John's tea, and fortunately for him, he hated tea therefore did not drink it. In the middle of the night, he heard torturous screams coming from nearby. He ran from the hotel, contacting authorities. This lead to the hanging of Lavinia and John Fisher. Lavinia was the first female to have been reported hung.</p>
+<p>Today, many people have reported incidents where they have seen a ghostly figure dressed in a long white gown. When Lavinia was hung, she insisted upon one thing, and that was that she wore her white gown to represent purity.</p>
+<h2>Anna Ravenel</h2>
+<p>If you are at all familiar with Charleston, then the Ravenel family should ring a bell. There is an entire bridge dedicated to the family! The story of Anna Ravenel is one of my favorite ghost stories because it is about love.</p>
+<p>Anna was born in 1813 in historic downtown Charleston to a very wealthy, renowned family. At the age of 14, she fell in love with a young soldier by the name of Edgar Perry. Their attraction was undeniable. However, there was one problem: Edgar didn't have any status, and he was only a soldier. Thus, Anna's father was bound and determined that she would never see him again. He went as far as to locking Anna in her room, keeping her on house arrest. One of the servants at the Ravenel house found a white wedding dress. It is suspected that Anna had planned to run away and elope.</p>
+<p>During this period, Edgar was restationed (there are rumors that Anna's father pulled some strings to remove him from Fort Moultrie) and Anna became deathly sick. Her dying wish was that she be buried in her white wedding gown which she never had the chance to wear. So that brings us to this question: when we see the apparition of a women wearing a white gown, is it Anna or is it Lavinia?</p>
+<p>After Edgar heard of the news, he was distraught. He then decided to start a new life and go back to his old name, Edgar Allan Poe. Poe wrote a poem called "Annabel Lee" which is rumored to be about the love of his life, Anna Ravenel.</p>
+
+
+</div>
+<footer>Katherine Byrne &copy;<br>
+	c: (860)966-3416
+	<a href="mailto:kibyrne23@gmail.com">Contact me here</a>
+	
+	
+<script type="text/javascript">
+/* This is where I created the drag function. Here, you can click on the ghost that is in the footer of the page, and you can drag him anywhere you want on the page. /*/
+    function startDrag(e) {
+            if (!e) {
+                var e = window.event;
+            }
+            if(e.preventDefault) e.preventDefault();
+
+            targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme') {return};
+            
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+                document.onmousemove=dragDiv;
+            return false;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+</script>
+
+<div id="draggable" class="dragme">
+<img src = "images/ghostMove.png" alt = "drag-and-drop" image script
+title ="drag-and-drop image script" class = "dragme">
+
+
+</div>
+</footer>
+
+
+
+</div>
+
+
+
+</body>
+</html>
