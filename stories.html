@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Hauntings of Charleston, South Carolina</title>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ghost.css"> 
+ <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+</header>
+
+<div id="col1">
+<a href="ghost.html">Home</a>
+<a href="purchase.html">Purchase Tickets</a>
+<a href="history.html">History</a>
+<a href="stories.html">Haunted Spots</a>
+<a href="goc.html">Ghosts of the City</a>
+<a href="references.html">References</a>
+</div>
+
+<div id="col2">
+<h1>Haunted Spots</h1>
+
+<p>Charleston has many haunted sites that are open to the public. Some of the most haunted places with the highest accounts of ghost sitings are...</p>
+
+<h2>Poogan's Porch</h2>
+<p>Poogan's Porch, located at 72 Queen Street, is a phenomenal restaurant. It was once a house that was converted into a restaurant in the 1950s. According to Trip Advisor, a majority of the ratings gave the food, atmosphere and service almost 5 stars!</p>
+<p>A lady by the name of Zoe St. Amand used to reside at 72 Queen Street with her sister and puppy, Poogan. Zoe and her sister, Elizabeth, were extremely close. Elizabeth died in 1945, and the death took a toll on Zoe. She became depressed, and mentally ill. Neighbors reported that she would yell and curse at passerby's, calling them degrading names and acting like a lunatic. She was often seen standing in the second floor balcony window banging on the windows. Zoe was taken to St. Francis Hospital due to her mental state, and that is where she died.</p>
+<p>Today, employees as well as guests at the restaurant have had encounters with Zoe. Chef's have said that when working late at night in the kitchen, things would go missing and pots and pans would magically be thrown across the room.</p>
+<p>Not only does Zoe haunt the restaurant, but her dog, Poogan does as well. Customers have also talked about a strange feeling against their leg while sitting outside on the porch. They said it felt as if a dog or a cat was rubbing against their leg. Little do they know, Poogan is buried on the grounds of the restaurant.</p>
+<p>Photos of Zoe can be found in google images. She is wearing a long, black dress which is how people describe her when they see her.</p>
+
+
+
+<div id="image1">
+<a href="images/poogan.jpg"><img src="images/poogan.jpg" alt="Poogan's Grave" width="250" height="300"></a>
+</div>
+<div id="image2">
+<a href="images/poogans.jpg"><img src="images/poogans.jpg" alt="Photo of Poogan's Restaurant" width="250" height="300"></a>
+</div>
+
+
+<h2>The Old Jail</h2>
+<p>The Old Jail is another spot that has a deep, dark history. The doors opened in 1802, and it housed some of the most serious, deadly criminals. For 137 years, it operated as Charleston's City Jail, primarily holding Civil War Federal prisoners. The cells were minuscule, holding 4-5 times the amount of men that they were capable of holding. </p>
+<p>Lavinia Fisher, previously mentioned, has been spotted at the Old Jail. The Ghost Adventures, a TV show about paranormal activity, caught her on tape saying the last words before she was hung, "the Devil."</p>
+
+<div id="image3">
+<a href="images/jail2.jpg"><img src="images/jail2.jpg" alt="Photo of the City Jail" width="250" height="300"></a>
+</div>
+
+
+
+
+</div>
+ 
+
+
+<footer>Katherine Byrne &copy;<br>
+	c: (860)966-3416
+	<a href="mailto:kibyrne23@gmail.com">Contact me here</a>
+	
+	
+<script type="text/javascript">
+/* This is where I created the drag function. Here, you can click on the ghost that is in the footer of the page, and you can drag him anywhere you want on the page. /*/
+    function startDrag(e) {
+            if (!e) {
+                var e = window.event;
+            }
+            if(e.preventDefault) e.preventDefault();
+
+            targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme') {return};
+            
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+                document.onmousemove=dragDiv;
+            return false;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+</script>
+
+<div id="draggable" class="dragme">
+<img src = "images/ghostMove.png" alt = "drag-and-drop" image script
+title ="drag-and-drop image script" class = "dragme">
+
+
+</div>
+</footer>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

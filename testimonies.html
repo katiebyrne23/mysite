@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Hauntings of Charleston, South Carolina</title>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ghost.css"> 
+ <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+
+</header>
+
+<div id="col1">
+<a href="ghost.html">Home</a>
+<a href="purchase.html">Purchase Tickets</a>
+<a href="history.html">History</a>
+<a href="stories.html">Haunted Spots</a>
+<a href="goc.html">Ghosts of the City</a>
+<a href="references.html">References</a>
+</div>
+
+<div id="col2">
+<h2>The First Female Serial Killer</h2>
+<p>The Six Mile Wayfarer House, several miles north of Charleston, had a steady crowd of mostly men who were traveling and in need of a place to stay for the night. Little did they know, they would not be leaving. Lavinia Fisher and her husband, John, ran this hotel and they would invite their guests to a homemade meal were Lavinia would go on to drug their food. After their customers began to feel drowsy, Lavinia would escort them to their room where they were essentially approaching their death. Lavinia and her husband brutally murdered tens of guests.</p>
+<p>Citizens became suspicious because many people were mysteriously disappearing. Due to lack of evidence, the sheriff's were unable to do anything for quite some time until a man named John consciously experienced the Fisher's plan and was able to escape before it was too late. Lavinia had tried to poison John's tea, and fortunately for him, he hated tea therefore did not drink it. In the middle of the night, he heard torturous screams coming from nearby. He ran from the hotel, contacting authorities. This lead to the hanging of Lavinia and John Fisher. Lavinia was the first female to have been reported hung.</p>
+<p>Today, many people have reported incidents where they have seen a ghostly figure dressed in a long white gown. When Lavinia was hung, she insisted upon one thing, and that was that she wore her white gown to represent purity.</p>
+</div>
+ 
+
+
+
+<footer>Katherine Byrne &copy;<br>
+	c: (860)966-3416
+	<a href="mailto:kibyrne23@gmail.com">Contact me here</a>
+	
+	
+<script type="text/javascript">
+/* This is where I created the drag function. Here, you can click on the ghost that is in the footer of the page, and you can drag him anywhere you want on the page. /*/
+
+    function startDrag(e) {
+            // determine event object
+            if (!e) {
+                var e = window.event;
+            }
+            if(e.preventDefault) e.preventDefault();
+
+            // IE uses srcElement, others use target
+            targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme') {return};
+            // calculate event X, Y coordinates
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            // assign default values for top and left properties
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+
+            // calculate integer values for top and left 
+            // properties
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+            // move div element
+                document.onmousemove=dragDiv;
+            return false;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            // var targ=e.target?e.target:e.srcElement;
+            // move div element
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+</script>
+
+<div id="draggable" class="dragme">
+<img src = "images/ghostMove.png" alt = "drag-and-drop" image script
+title ="drag-and-drop image script" class = "dragme">
+
+
+</div>
+</footer>
+
+
+
+</div>
+
+
+
+</body>
+</html>

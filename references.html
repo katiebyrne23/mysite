@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Hauntings of Charleston, South Carolina</title>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ghost.css"> 
+ <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+
+</header>
+
+<div id="col1">
+<a href="ghost.html">Home</a>
+<a href="purchase.html">Purchase Tickets</a>
+<a href="history.html">History</a>
+<a href="stories.html">Haunted Spots</a>
+<a href="goc.html">Ghosts of the City</a>
+<a href="references.html">References</a>
+</div>
+
+<div id="col2">
+<h1>History</h1>
+<ul>
+<li>http://www.sciway.net/hist/chicora/slavery18-2.html | I used this site for information about ancient Egypt, and Mafdet.</li>
+</ul>
+
+<h1>Haunted Spots</h1>
+<ul>
+<li>http://www.tripadvisor.com/Restaurant_Review-g54171-d476125-Reviews-Poogan_s_Porch-Charleston_South_Carolina.html| Used Trip Advisor to find information about Poogan's Porch</li>
+<li>All images were taken by myself.</li>
+</ul>
+<h1>Ghosts of Charleston</h1>
+<ul>
+<li>https://scaresandhauntsofcharleston.wordpress.com/2012/03/15/anna-ravenel-and-the-unitarian-church-graveyard/ | Used for information on Annabel Ravenel</li>
+</ul>
+
+<h1>Ghosts of Charleston</h1>
+<ul>
+<li>https://scaresandhauntsofcharleston.wordpress.com/2012/03/13/zoe-st-amand-ghost-of-poogans-porch/ | Facts about Zoe St. Amand</li>
+<li>https://scaresandhauntsofcharleston.wordpress.com/2012/03/15/anna-ravenel-and-the-unitarian-church-graveyard/ | Facts about Anna Ravenel</li>
+</ul>
+</div>
+ 
+
+
+
+
+<footer>Katherine Byrne &copy;<br>
+	c: (860)966-3416
+	<a href="mailto:kibyrne23@gmail.com">Contact me here</a>
+	
+
+<script type="text/javascript">
+/* This is where I created the drag function. Here, you can click on the ghost that is in the footer of the page, and you can drag him anywhere you want on the page. /*/
+    function startDrag(e) {
+            if (!e) {
+                var e = window.event;
+            }
+            if(e.preventDefault) e.preventDefault();
+
+            targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme') {return};
+            
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+                document.onmousemove=dragDiv;
+            return false;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+</script>
+
+<div id="draggable" class="dragme">
+<img src = "images/ghostMove.png" alt = "drag-and-drop" image script
+title ="drag-and-drop image script" class = "dragme">
+
+
+</div>
+</footer>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

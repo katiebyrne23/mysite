@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Hauntings of Charleston, South Carolina</title>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ghost.css"> 
+ <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+
+</header>
+
+<div id="col1">
+<a href="ghost.html">Home</a>
+<a href="purchase.html">Purchase Tickets</a>
+<a href="history.html">History</a>
+<a href="stories.html">Haunted Spots</a>
+<a href="goc.html">Ghosts of the City</a>
+<a href="references.html">References</a>
+</div>
+
+<div id="col2">
+<h1>What makes a place haunted?</h1>
+<p>There are many factors that happen to make a location haunted. Charleston just so happens to be a haven. Here are the top three things that can "attract the departed":</p>
+<ul>
+	<li>Past Occurrences</li>
+	<li>Proximity to Water</li>
+	<li>Feral Cats</li>
+</ul>
+<h2>Past Occurrences</h2>
+<p>Charleston is renowned for its' history. The first thing that comes to many peoples minds when they think of Charleston is The Civil War. There were battles fought on land and in sea, leaving many soldiers dead. The African Slave Trade also left many dead, and their bodies were poorly disposed of. This is one of the obvious reasons as to why Charleston is haunted... the other two require a little more explaining.</p>
+<h2>Proximity to Water</h2>
+<p>For some strange reason, those who have departed and whose souls are still trapped on earth gravitate towards areas where there are large bodies of water. It is unclear why, but Downtown Charleston is surrounded by water on 3 sides! This makes Charleston a prime spot for paranormal activity.</p>
+<h2>Feral Cats</h2>
+<p>When I first heard that feral cats are a sign of paranormal activity, I was shocked. I remember thinking to myself, what does a cat have to do with a ghost? After doing some research, I discovered that "lost souls" reincarnate themselves as cats. Thinking about this further, it makes some sense when I connected the dots. For example, look at Egypt. A cat is sacred considered to Egyptians. Know why? There was an ancient goddess, Mafdet, who was a human-lion hybrid. Tales tell that she had a lion head! Thus, the Egyptians praise cats because they believe that one day Mafdet will rise as a cat!</p>
+<p>So now, this legend has spread, and many people believe that cats possess the souls of those who are deceased.</p>
+
+ 
+
+
+
+</div>
+
+<footer>Katherine Byrne &copy;<br>
+	c: (860)966-3416
+	<a href="mailto:kibyrne23@gmail.com">Contact me here</a>
+	
+	
+<script type="text/javascript">
+/* This is where I created the drag function. Here, you can click on the ghost that is in the footer of the page, and you can drag him anywhere you want on the page. /*/
+    function startDrag(e) {
+            if (!e) {
+                var e = window.event;
+            }
+            if(e.preventDefault) e.preventDefault();
+
+            targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme') {return};
+            
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+                document.onmousemove=dragDiv;
+            return false;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+</script>
+
+<div id="draggable" class="dragme">
+<img src = "images/ghostMove.png" alt = "drag-and-drop" image script
+title ="drag-and-drop image script" class = "dragme">
+
+
+</div>
+</footer>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
