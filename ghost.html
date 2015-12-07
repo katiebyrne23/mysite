@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Hauntings of Charleston, South Carolina</title>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ghost.css"> 
+ <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+
+</header>
+
+<div id="col1">
+
+<a href="ghost.html">Home</a>
+<a href="purchase.html">Purchase Tickets</a>
+<a href="history.html">History</a>
+<a href="stories.html">Haunted Spots</a>
+<a href="goc.html">Ghosts of the City</a>
+<a href="references.html">References</a>
+
+</div>
+
+<div id="col2">
+<p>Charleston, South Carolina is a destination that attracts people from all over the world. Renowned for it's excellent food and Southern hospitality, come Spring downtown King Street will be packed with people.</p>
+<p>One of Charleston's largets attractions is its ghosts. This site is designed to educate those on Charleston's ghost history, and to share some spooky stories!</p>
+<h2>Charleston Ghost Tours</h2>
+
+<table>
+
+<tr>
+
+	<th>Location</th><!-- table heading-->
+	<th>Adult Price</th>
+	<th>Children's Price</th>
+	<th>Phone Number</th>
+</tr>
+
+
+<tr>
+	<td>Charleston's Best Tours </td>
+	<td>$15</td>
+	<td>$10</td>
+	<td>(843) 819-4546</td>
+</tr>
+
+<tr>
+	<td>Bulldog Tours: Haunted Jail</td>
+	<td>$20</td>
+	<td>$10</td>
+	<td>(843) 722-8687</td>
+</tr>
+
+<tr>
+	<td>Bulldog Tours: Ghost and Dungeon</td>
+	<td>$20</td>
+	<td>$10</td>
+	<td>(843) 722-8687</td>
+</tr>
+
+<tr>
+	<td>Bulldog Tours: Darkside of Charleston</td>
+	<td>$20</td>
+	<td>$20</td>
+	<td>(843) 722-8687</td>
+</tr>
+
+<tr>
+	<td>Bulldog Tours: Ghost and Graveyard</td>
+	<td>$20</td>
+	<td>$10</td>
+	<td>(843) 722-8687</td>
+</tr>
+</table>
+</div>
+
+
+
+
+</div>
+<footer>Katherine Byrne &copy;<br>
+	c: (860)966-3416
+	<a href="mailto:kibyrne23@gmail.com">Contact me here</a>
+	
+	
+<script type="text/javascript">
+/* This is where I created the drag function. Here, you can click on the ghost that is in the footer of the page, and you can drag him anywhere you want on the page. /*/
+    function startDrag(e) {
+            if (!e) {
+                var e = window.event;
+            }
+            if(e.preventDefault) e.preventDefault();
+
+            targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme') {return};
+            
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+                document.onmousemove=dragDiv;
+            return false;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+</script>
+
+<div id="draggable" class="dragme">
+<img src = "images/ghostMove.png" alt = "drag-and-drop" image script
+title ="drag-and-drop image script" class = "dragme">
+
+
+</div>
+</footer>
+
+
+
+</div>
+
+
+
+</body>
+</html>
