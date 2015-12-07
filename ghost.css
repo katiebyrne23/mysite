@@ -1,0 +1,217 @@
+/* C5000D red
+0A0A0D black
+D7D7D9 light grey
+F2F2F2 almost white
+262523 dark grey
+*/
+
+body {
+	overflow-x: hidden
+}
+
+header {
+	font-family: 'Amatic SC', cursive;
+	border-radius: 25px;
+	background-image: url(images/GBP.jpg);
+	width: device-width;
+	height: 235px;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	padding-right: 10px;
+	border-radius: 5px;
+	border: 2px double;
+	margin: 3px 0px 3px 5px;
+	box-shadow: 2px 2px 0px red;
+	background-color: #D7D7D9;
+	font-family: georgia;
+}
+
+p {
+	color: #7a2929;
+}
+
+
+
+a:link {
+	color: #C5000D;
+}
+
+a:visited {
+	color: black; 
+}
+
+a:hover {
+	color: #F2F2F2;
+}
+	
+
+
+
+#wrapper {
+	width: device-width;
+	margin: 25px;
+	background-color: #D7D7D9;
+}
+
+#col1 {
+	width: 250px;
+	float: left;
+	padding-left: 25px;
+	padding-top: 10px;
+	background-color: #D7D7D9;
+}
+
+#col2 {
+	padding-left: 25px;
+	padding-top: 10px;
+	width: 600px;
+	float: left;
+	background-color: #D7D7D9;
+	font-family: georgia, helvetica; 
+	padding-bottom: 15px;
+
+}
+
+#col3 {
+	width: 950px;
+	font-family: georgia, helvetica;
+}
+
+ul{
+	list-style-image: url(images/gbullet.png);
+}
+
+#aboutmephoto {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	clear: both;
+	border-radius: 30px;
+	height: 300px;
+}
+
+#image1 {
+	float: left; 
+	padding-top: 20px;
+	border-radius: none;
+	background: #D7D7D9;
+	padding-bottom: 20px;
+}
+
+#image1:hover {
+	-webkit-filter: grayscale(100%);
+}
+
+
+#image2 {
+	float: right;
+	padding-top: 20px;
+	padding-right: 50px;
+	border-radius: none;
+	background: #D7D7D9;
+	padding-bottom: 20px;
+}
+
+
+#image2:hover{
+	-webkit-filter: grayscale(100%);
+}
+
+#image3 {
+	text-align: center;
+	border-radius: none;
+	background-color: #D7D7D9;
+}
+
+#image3:hover {
+	-webkit-filter: grayscale(100%);
+}
+
+table, th, td {
+	border: 2px solid black;
+	font-family: arial;
+	color: #908a00;
+
+
+}
+
+.mover {
+    position: absolute;
+    top: 0;
+}
+
+/* This code corresponds to the dragging of the ghost in the footer */
+.dragme{
+    position: relative;
+    width: 270px;
+    height: 203px;
+    cursor: move;
+    left: 240px;
+}
+
+/* This code corresponds to the dragging of the ghost in the footer */
+#draggable {
+    background-color: D7D7D9;
+}
+
+/* dropdown menu */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+
+/*
+footer {
+	text-align: center;
+	background-color: #000000;
+	clear: both;
+	border-radius: 30px;
+	height: 100px;
+	font-family: arial, helvectiva;
+	color: white;
+}
+
+*/
